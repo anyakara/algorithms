@@ -21,11 +21,3 @@ def fractional_knapsack(n: int, m: int, weights: list[int], prices: list[int]):
             remaining_weight = m - current_weight
             total_price += remaining_weight * price
     return total_price
-
-
-if __name__ == "__main__":
-    objects = [1, 2, 3, 4, 5, 6, 7]
-    profits = [10, 5, 15, 7, 6, 18, 3]
-    weights = [2, 3, 5, 7, 1, 4, 1]
-    price = fractional_knapsack(7, 15, weights, profits)
-    print(price)

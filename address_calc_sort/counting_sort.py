@@ -1,6 +1,9 @@
 def run_counting_sort(arr):
-    min_val = min(arr)
-    max_val = max(arr)
+    if len(arr) > 1:
+        min_val = min(arr)
+        max_val = max(arr)
+    else:
+        return arr
 
     arr_range = max_val - min_val + 1
     occ = [0] * arr_range
@@ -14,5 +17,5 @@ def run_counting_sort(arr):
 
     return new_list
 
-defa = [1, 4, 2, 3, 5, 6, 2]
-print(run_counting_sort(defa))
+# defa = [1, 4, 2, 3, 5, 6, 2]
+# print(run_counting_sort(defa))
